@@ -14,9 +14,7 @@
 		006340FF2A66F7FD00A8D3A7 /* CameraTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006340FE2A66F7FD00A8D3A7 /* CameraTCATests.swift */; };
 		006341092A66F7FD00A8D3A7 /* CameraTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006341082A66F7FD00A8D3A7 /* CameraTCAUITests.swift */; };
 		0063410B2A66F7FD00A8D3A7 /* CameraTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063410A2A66F7FD00A8D3A7 /* CameraTCAUITestsLaunchTests.swift */; };
-		006341192A66F85200A8D3A7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 006341182A66F85200A8D3A7 /* ComposableArchitecture */; };
-		0063411D2A66F8B200A8D3A7 /* CameraFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063411B2A66F8B200A8D3A7 /* CameraFeature.swift */; };
-		0063411E2A66F8B200A8D3A7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063411C2A66F8B200A8D3A7 /* CameraView.swift */; };
+		006341252A6700EA00A8D3A7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 006341242A6700EA00A8D3A7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		006341042A66F7FD00A8D3A7 /* CameraTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006341082A66F7FD00A8D3A7 /* CameraTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTCAUITests.swift; sourceTree = "<group>"; };
 		0063410A2A66F7FD00A8D3A7 /* CameraTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0063411B2A66F8B200A8D3A7 /* CameraFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeature.swift; sourceTree = "<group>"; };
-		0063411C2A66F8B200A8D3A7 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		006341212A66F99E00A8D3A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006341192A66F85200A8D3A7 /* ComposableArchitecture in Frameworks */,
+				006341252A6700EA00A8D3A7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				006341212A66F99E00A8D3A7 /* Info.plist */,
-				0063411A2A66F87F00A8D3A7 /* CameraFeature */,
 				006340ED2A66F7FD00A8D3A7 /* CameraTCAApp.swift */,
 				006340EF2A66F7FD00A8D3A7 /* Root.swift */,
 				006340F12A66F7FD00A8D3A7 /* Assets.xcassets */,
@@ -136,15 +131,6 @@
 			path = CameraTCAUITests;
 			sourceTree = "<group>";
 		};
-		0063411A2A66F87F00A8D3A7 /* CameraFeature */ = {
-			isa = PBXGroup;
-			children = (
-				0063411B2A66F8B200A8D3A7 /* CameraFeature.swift */,
-				0063411C2A66F8B200A8D3A7 /* CameraView.swift */,
-			);
-			path = CameraFeature;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,7 +148,7 @@
 			);
 			name = CameraTCA;
 			packageProductDependencies = (
-				006341182A66F85200A8D3A7 /* ComposableArchitecture */,
+				006341242A6700EA00A8D3A7 /* ComposableArchitecture */,
 			);
 			productName = CameraTCA;
 			productReference = 006340EA2A66F7FD00A8D3A7 /* CameraTCA.app */;
@@ -237,7 +223,7 @@
 			);
 			mainGroup = 006340E12A66F7FD00A8D3A7;
 			packageReferences = (
-				006341172A66F85200A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				006341232A6700EA00A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 006340EB2A66F7FD00A8D3A7 /* Products */;
 			projectDirPath = "";
@@ -281,8 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0063411E2A66F8B200A8D3A7 /* CameraView.swift in Sources */,
-				0063411D2A66F8B200A8D3A7 /* CameraFeature.swift in Sources */,
 				006340F02A66F7FD00A8D3A7 /* Root.swift in Sources */,
 				006340EE2A66F7FD00A8D3A7 /* CameraTCAApp.swift in Sources */,
 			);
@@ -613,20 +597,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		006341172A66F85200A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		006341232A6700EA00A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture#documentation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.56.0;
+				minimumVersion = 0.53.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		006341182A66F85200A8D3A7 /* ComposableArchitecture */ = {
+		006341242A6700EA00A8D3A7 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 006341172A66F85200A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 006341232A6700EA00A8D3A7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
