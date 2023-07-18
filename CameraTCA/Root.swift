@@ -9,22 +9,23 @@ struct RootFeature: ReducerProtocol {
         var latestPhotoData: Data?
         var count: Int
     }
-    
+
     enum Action {
         case incrementButtonTapped
         case loadDummyButtonTapped
     }
-    
+
     var body: some ReducerProtocolOf<Self> {
         Reduce<State, Action> { state, action in
             switch action {
             case .incrementButtonTapped:
                 state.count += 1
                 return .none
-                
+
             case .loadDummyButtonTapped:
                 guard let image = UIImage(named: "DummyImage"),
-                      let imageData = image.jpegData(compressionQuality: 1) else {
+                      let imageData = image.jpegData(compressionQuality: 1)
+                else {
                     fatalError("No image found.")
                 }
                 state.latestPhotoData = imageData
